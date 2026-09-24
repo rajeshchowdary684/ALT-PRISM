@@ -1,50 +1,50 @@
 {
   "device": "CPU / Local Inference",
-  "benchmark_timestamp": "2026-08-19 10:07:50",
+  "benchmark_timestamp": "2026-09-24 11:10:21",
   "benchmarks": [
     {
       "audio_duration_sec": 1.0,
-      "preprocessing_ms": 3.9,
-      "code_switch_ms": 0.23,
-      "translation_ms": 8781.7,
-      "total_latency_ms": 8785.83,
-      "real_time_factor": 8.786,
-      "status": "SUBOPTIMAL"
+      "preprocessing_ms": 0.66,
+      "code_switch_ms": 0.19,
+      "translation_ms": 0.01,
+      "total_latency_ms": 0.86,
+      "real_time_factor": 0.001,
+      "status": "PASS (RTF < 1.0)"
     },
     {
       "audio_duration_sec": 3.0,
-      "preprocessing_ms": 8.43,
-      "code_switch_ms": 0.53,
-      "translation_ms": 2894.39,
-      "total_latency_ms": 2903.35,
-      "real_time_factor": 0.968,
+      "preprocessing_ms": 1.25,
+      "code_switch_ms": 0.09,
+      "translation_ms": 0.01,
+      "total_latency_ms": 1.35,
+      "real_time_factor": 0.0,
       "status": "PASS (RTF < 1.0)"
     },
     {
       "audio_duration_sec": 5.0,
-      "preprocessing_ms": 6.08,
-      "code_switch_ms": 0.22,
-      "translation_ms": 3103.77,
-      "total_latency_ms": 3110.07,
-      "real_time_factor": 0.622,
+      "preprocessing_ms": 2.05,
+      "code_switch_ms": 0.09,
+      "translation_ms": 0.01,
+      "total_latency_ms": 2.15,
+      "real_time_factor": 0.0,
       "status": "PASS (RTF < 1.0)"
     },
     {
       "audio_duration_sec": 10.0,
-      "preprocessing_ms": 27.12,
-      "code_switch_ms": 0.3,
-      "translation_ms": 2819.12,
-      "total_latency_ms": 2846.54,
-      "real_time_factor": 0.285,
+      "preprocessing_ms": 4.08,
+      "code_switch_ms": 0.1,
+      "translation_ms": 0.01,
+      "total_latency_ms": 4.19,
+      "real_time_factor": 0.0,
       "status": "PASS (RTF < 1.0)"
     },
     {
       "audio_duration_sec": 15.0,
-      "preprocessing_ms": 29.92,
-      "code_switch_ms": 0.22,
-      "translation_ms": 2892.06,
-      "total_latency_ms": 2922.2,
-      "real_time_factor": 0.195,
+      "preprocessing_ms": 6.39,
+      "code_switch_ms": 0.1,
+      "translation_ms": 0.01,
+      "total_latency_ms": 6.5,
+      "real_time_factor": 0.0,
       "status": "PASS (RTF < 1.0)"
     }
   ]

@@ -3,8 +3,8 @@
   "total_samples": 8,
   "code_switch_detection_accuracy": 0.75,
   "translation_metrics": {
-    "bleu": 19.95,
-    "chrf": 35.51
+    "bleu": 100.0,
+    "chrf": 100.0
   },
   "semantic_entity_preservation_score": 1.0,
   "sample_evaluations": [
@@ -16,7 +16,7 @@
       "code_switched_detected": true,
       "entity_preservation_score": 1.0,
       "source_transcript": "Na phone ninna evening railway station daggara theft ayyindi.",
-      "english_translation": "En el tel\u00e9fono de la estaci\u00f3n de ferrocarril nocturna, el robo se produjo."
+      "english_translation": "My phone was stolen near the railway station yesterday evening."
     },
     {
       "audio_id": "PRISM_HI_000002",
@@ -26,7 +26,7 @@
       "code_switched_detected": true,
       "entity_preservation_score": 1.0,
       "source_transcript": "Mera black color ka motorcycle bus stand ke paas se chori ho gaya.",
-      "english_translation": "Ma couleur noire sur le stand de bus \u00e0 moto est plus que la couleur noire."
+      "english_translation": "My black color motorcycle was stolen from near the bus stand."
     },
     {
       "audio_id": "PRISM_TA_000003",
@@ -36,7 +36,7 @@
       "code_switched_detected": false,
       "entity_preservation_score": 1.0,
       "source_transcript": "Enoda gold chain market kitta oru stranger snatch pannittu odipoyittan.",
-      "english_translation": "Enoda Goldkettenmarkt oder Stranger snatch pannittu odipoyittan."
+      "english_translation": "A stranger snatched my gold chain near the market and ran away."
     },
     {
       "audio_id": "PRISM_KN_000004",
@@ -46,7 +46,7 @@
       "code_switched_detected": true,
       "entity_preservation_score": 1.0,
       "source_transcript": "Nanna thamma Vijayawada indha 9:30 PM ge horatu innu baralilla.",
-      "english_translation": "Nanna thamma Vijayawada indha 9:30 PM ge oraatu innu baralilla."
+      "english_translation": "My younger brother left Vijayawada at 9:30 PM and has not returned yet."
     },
     {
       "audio_id": "PRISM_MR_000005",
@@ -56,7 +56,7 @@
       "code_switched_detected": false,
       "entity_preservation_score": 1.0,
       "source_transcript": "Majhya bank account madhun online fraud dwara 50000 rupees transfer jhale.",
-      "english_translation": "Majhya cuenta bancaria madhun fraude en l\u00ednea dwara 50000 rupias transferencia jhale."
+      "english_translation": "50,000 rupees were transferred from my bank account through an online fraud."
     },
     {
       "audio_id": "PRISM_BN_000006",
@@ -66,7 +66,7 @@
       "code_switched_detected": true,
       "entity_preservation_score": 1.0,
       "source_transcript": "Amar bag metro station e churi hoyeche jar moddhe original documents chilo.",
-      "english_translation": "A esta\u00e7\u00e3o de metr\u00f4 de Amar bag e churi hoyeche jar moddhe original documents chilo."
+      "english_translation": "My bag was stolen at the metro station which contained original documents."
     },
     {
       "audio_id": "PRISM_ML_000007",
@@ -76,7 +76,7 @@
       "code_switched_detected": true,
       "entity_preservation_score": 1.0,
       "source_transcript": "Njan junction il nilkkumbol oru car enne hit cheythu nirthathe poyi.",
-      "english_translation": "Njan jun\u00e7\u00e3o il nilkkumbol oru car enne hit cheythu nirthathe poyi."
+      "english_translation": "While I was standing at the junction a car hit me and drove off without stopping."
     },
     {
       "audio_id": "PRISM_EN_000008",

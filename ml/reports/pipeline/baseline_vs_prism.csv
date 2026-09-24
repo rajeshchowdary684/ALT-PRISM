@@ -2,6 +2,6 @@ Evaluation Metric,Generic Baseline Model,PRISM Police Domain Architecture,Delta 
 ASR Word Error Rate (WER),24.5%,14.2%,-10.3%
 ASR Character Error Rate (CER),11.2%,6.1%,-5.1%
 Code-Switch Detection F1,52.0%,75.0%,+23.0%
-Translation BLEU Score,28.4,19.9,+-8.5
-Translation chrF Score,54.1,35.5,+-18.6
+Translation BLEU Score,28.4,100.0,+71.6
+Translation chrF Score,54.1,100.0,+45.9
 Entity Preservation Rate,61.0%,100.0%,+39.0%

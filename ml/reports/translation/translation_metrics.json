@@ -1,8 +1,8 @@
 {
   "global_metrics": {
-    "total_samples": 5,
-    "global_bleu": 89.13,
-    "global_chrf": 93.75
+    "total_samples": 8,
+    "global_bleu": 85.54,
+    "global_chrf": 91.9
   },
   "pair_metrics": {
     "te-en": {
@@ -29,6 +29,21 @@
       "sample_count": 1,
       "bleu": 67.03,
       "chrf": 82.26
+    },
+    "en-en": {
+      "sample_count": 1,
+      "bleu": 100.0,
+      "chrf": 100.0
+    },
+    "bn-en": {
+      "sample_count": 1,
+      "bleu": 47.59,
+      "chrf": 76.57
+    },
+    "ml-en": {
+      "sample_count": 1,
+      "bleu": 82.82,
+      "chrf": 90.97
     }
   }
 }

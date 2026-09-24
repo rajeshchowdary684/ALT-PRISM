@@ -1,0 +1,201 @@
+{
+  "asr": {
+    "global_metrics": {
+      "total_samples": 8,
+      "global_wer": 0.0217,
+      "global_cer": 0.0092,
+      "global_word_accuracy": 0.9783
+    },
+    "language_metrics": {
+      "te": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      },
+      "hi": {
+        "sample_count": 1,
+        "wer": 0.0769,
+        "cer": 0.0462,
+        "accuracy_word": 0.9231
+      },
+      "ta": {
+        "sample_count": 1,
+        "wer": 0.1,
+        "cer": 0.0286,
+        "accuracy_word": 0.9
+      },
+      "kn": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      },
+      "mr": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      },
+      "en": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      },
+      "bn": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      },
+      "ml": {
+        "sample_count": 1,
+        "wer": 0.0,
+        "cer": 0.0,
+        "accuracy_word": 1.0
+      }
+    }
+  },
+  "translation": {
+    "global_metrics": {
+      "total_samples": 8,
+      "global_bleu": 85.54,
+      "global_chrf": 91.9
+    },
+    "pair_metrics": {
+      "te-en": {
+        "sample_count": 1,
+        "bleu": 100.0,
+        "chrf": 100.0
+      },
+      "hi-en": {
+        "sample_count": 1,
+        "bleu": 74.26,
+        "chrf": 87.91
+      },
+      "ta-en": {
+        "sample_count": 1,
+        "bleu": 100.0,
+        "chrf": 100.0
+      },
+      "kn-en": {
+        "sample_count": 1,
+        "bleu": 100.0,
+        "chrf": 100.0
+      },
+      "mr-en": {
+        "sample_count": 1,
+        "bleu": 67.03,
+        "chrf": 82.26
+      },
+      "en-en": {
+        "sample_count": 1,
+        "bleu": 100.0,
+        "chrf": 100.0
+      },
+      "bn-en": {
+        "sample_count": 1,
+        "bleu": 47.59,
+        "chrf": 76.57
+      },
+      "ml-en": {
+        "sample_count": 1,
+        "bleu": 82.82,
+        "chrf": 90.97
+      }
+    }
+  },
+  "pipeline": {
+    "dataset": "PRISM-SYNTHETIC-DOMAIN-DATA",
+    "total_samples": 8,
+    "code_switch_detection_accuracy": 0.75,
+    "translation_metrics": {
+      "bleu": 100.0,
+      "chrf": 100.0
+    },
+    "semantic_entity_preservation_score": 1.0,
+    "sample_evaluations": [
+      {
+        "audio_id": "PRISM_TE_000001",
+        "language": "te",
+        "category": "theft",
+        "code_switched_expected": true,
+        "code_switched_detected": true,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Na phone ninna evening railway station daggara theft ayyindi.",
+        "english_translation": "My phone was stolen near the railway station yesterday evening."
+      },
+      {
+        "audio_id": "PRISM_HI_000002",
+        "language": "hi",
+        "category": "vehicle_theft",
+        "code_switched_expected": true,
+        "code_switched_detected": true,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Mera black color ka motorcycle bus stand ke paas se chori ho gaya.",
+        "english_translation": "My black color motorcycle was stolen from near the bus stand."
+      },
+      {
+        "audio_id": "PRISM_TA_000003",
+        "language": "ta",
+        "category": "assault_robbery",
+        "code_switched_expected": true,
+        "code_switched_detected": false,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Enoda gold chain market kitta oru stranger snatch pannittu odipoyittan.",
+        "english_translation": "A stranger snatched my gold chain near the market and ran away."
+      },
+      {
+        "audio_id": "PRISM_KN_000004",
+        "language": "kn",
+        "category": "missing_person",
+        "code_switched_expected": true,
+        "code_switched_detected": true,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Nanna thamma Vijayawada indha 9:30 PM ge horatu innu baralilla.",
+        "english_translation": "My younger brother left Vijayawada at 9:30 PM and has not returned yet."
+      },
+      {
+        "audio_id": "PRISM_MR_000005",
+        "language": "mr",
+        "category": "cyber_complaint",
+        "code_switched_expected": true,
+        "code_switched_detected": false,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Majhya bank account madhun online fraud dwara 50000 rupees transfer jhale.",
+        "english_translation": "50,000 rupees were transferred from my bank account through an online fraud."
+      },
+      {
+        "audio_id": "PRISM_BN_000006",
+        "language": "bn",
+        "category": "lost_document",
+        "code_switched_expected": true,
+        "code_switched_detected": true,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Amar bag metro station e churi hoyeche jar moddhe original documents chilo.",
+        "english_translation": "My bag was stolen at the metro station which contained original documents."
+      },
+      {
+        "audio_id": "PRISM_ML_000007",
+        "language": "ml",
+        "category": "accident",
+        "code_switched_expected": true,
+        "code_switched_detected": true,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "Njan junction il nilkkumbol oru car enne hit cheythu nirthathe poyi.",
+        "english_translation": "While I was standing at the junction a car hit me and drove off without stopping."
+      },
+      {
+        "audio_id": "PRISM_EN_000008",
+        "language": "en",
+        "category": "fraud",
+        "code_switched_expected": false,
+        "code_switched_detected": false,
+        "entity_preservation_score": 1.0,
+        "source_transcript": "An unknown person called me pretending to be a bank manager and took my OTP.",
+        "english_translation": "An unknown person called me pretending to be a bank manager and took my OTP."
+      }
+    ]
+  }
+}

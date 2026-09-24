@@ -90,7 +90,7 @@ def run_realtime_voice_demo(language_hint: str = None):
 
                 # Short-term RMS energy check for Voice Activity Detection
                 frame_energy = float(np.sqrt(np.mean(np.square(chunk))))
-                is_voice = frame_energy > 0.015
+                is_voice = frame_energy > 0.035  # Raised threshold to suppress background noise hallucination
 
                 current_time = round(total_audio_samples / sample_rate, 2)
 
@@ -100,7 +100,7 @@ def run_realtime_voice_demo(language_hint: str = None):
                     current_buffered = np.concatenate(current_segment_chunks)
                     segment_start = round((total_audio_samples - len(current_buffered)) / sample_rate, 2)
 
-                    if len(current_buffered) >= sample_rate * 0.6:
+                    if len(current_buffered) >= sample_rate * 1.2:  # Need at least 1.2s of speech for partial
                         asr_res = engine.asr_provider.transcribe_segment(
                             current_buffered, sample_rate=sample_rate, language_hint=language_hint
                         )
@@ -111,12 +111,12 @@ def run_realtime_voice_demo(language_hint: str = None):
                             sys.stdout.flush()
                 else:
                     silence_count += 1
-                    if silence_count >= 3:
+                    if silence_count >= 10:  # ~4 seconds of silence before finalizing segment
                         if len(current_segment_chunks) > 0:
                             segment_audio = np.concatenate(current_segment_chunks)
                             segment_start = round((total_audio_samples - len(segment_audio)) / sample_rate, 2)
 
-                            if len(segment_audio) >= sample_rate * 0.5:
+                            if len(segment_audio) >= sample_rate * 1.0:  # Need at least 1 second of real speech
                                 asr_res = engine.asr_provider.transcribe_segment(
                                     segment_audio, sample_rate=sample_rate, language_hint=language_hint
                                 )
